@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import org.lasencinas.carrera.Carrera;
 //import org.lasencinas.conductores.Conductor;
 //import org.lasencinas.conductores.PoolConductores;
+import org.lasencinas.conductor.Conductor;
+import org.lasencincas.poolconductores.PoolConductores;
 
 public class CotxoxSpringApplication {
 
@@ -50,7 +52,7 @@ public class CotxoxSpringApplication {
 		 * para ofrecer el servicio.
 		 * La flota es un objeto de tipo PoolConductores.
 		 */
-		/*
+		
 		ArrayList<Conductor> poolConductores = new ArrayList<>();
 		Conductor conductor = null;
 
@@ -66,7 +68,7 @@ public class CotxoxSpringApplication {
 		String[] modelos = { "Chevy Malibu", "Toyota Prius", "Mercedes A" };
 
 		int index = 0;
-		// conductora.getClass().getFields();
+		//conductora.getClass().getFields();
 		for (Conductor conductora : poolConductores) {
 			conductora.setMatricula(matricula[index]);
 			conductora.setModelo(modelos[index]);
@@ -81,10 +83,10 @@ public class CotxoxSpringApplication {
 
 		/* Seleccion del conductor en la flota y asignacion a la carrera */
 		
-		//carrera.asignarConductor(conductores);
+		carrera.asignarConductor(conductores);
 
 		// Info por pantalla
-		/*
+		
 		System.out.println("Driver: " + carrera.getConductor().getNombre());
 		System.out.println("Type: " + carrera.getConductor().getModelo());
 		System.out.println("Matricula: " + carrera.getConductor().getMatricula());
@@ -101,8 +103,8 @@ public class CotxoxSpringApplication {
 		// contact by phone		
 		 
 		//System.out.println("\n#####" + "\t Pay and Tip: \t" + "#####\n");
-		*/
-		/*
+		
+		
 		carrera.realizarPago(carrera.getCosteEsperado());
 		carrera.recibirPropina(1);
 		carrera.liberarConductor();
@@ -119,6 +121,6 @@ public class CotxoxSpringApplication {
 
 		System.out.println("Driver: " + carrera.getConductor().getNombre());
 		System.out.println("Stars: " + carrera.getConductor().getValoracion());
-*/	}
+	}
 }
 
